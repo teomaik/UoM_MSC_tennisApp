@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MSC Askisi 1</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="addplayer.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header_MSC">
+        <a id="logo"><img id="logo_img" src="images/logo.png" /></a>
+        <nav id="navigation">
+            <a href="#" id="menu"></a>
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main_cont">
+        <div class="container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Player's first name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Player's last name..">
+
+                <label for="birth">Date of birth</label>
+                <input type="text" id="birth" name="birthdate" placeholder="Player's date of birth.. (day/month/year)">
+
+                <label for="country">Nationality</label>
+                <input type="text" id="country" name="nationality" placeholder="Player's nationality..">
+
+                <label for="hght">Height</label>
+                <input type="text" id="hght" name="height" placeholder="Player's height..">
+
+                <button id="addplbt">Add</button>
+            </form>
+        </div>
+    </main>
+
+    <footer id="last">
+        <p id="owner">Maikantis Theodoros mai21033</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Firebaseeeeeeeeeeeeeeeeeeeee -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDfQnzpylg6s33Jnyt4BDuyqxlKgF4U0T4",
+            authDomain: "tennisappmsc.firebaseapp.com",
+            databaseURL: "https://tennisappmsc-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "tennisappmsc",
+            storageBucket: "tennisappmsc.appspot.com",
+            messagingSenderId: "986479139293",
+            appId: "1:986479139293:web:044e96d3ecb14fb9603e34",
+            measurementId: "G-674V4CJ9VR"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        const db = firebase.database();
+    </script>
+
+
+    <script src="./src/addplayer.js"></script>
+</body>
+
+</html>

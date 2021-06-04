@@ -1,0 +1,209 @@
+ /* Dropdown Button */
+ 
+ html {
+     background-color: #6c6d74;
+     background-image: url('assets/tennis-court-dimensions.jpg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-blend-mode: screen;
+     min-height: 100%;
+ }
+ 
+ body {
+     background: #f0f0f0;
+     color: #555;
+ }
+ 
+ h1 {
+     text-align: center;
+     font-size: 180%;
+     line-height: 120%;
+     padding: 5% 0;
+ }
+ 
+ h2 {
+     text-decoration: underline;
+     line-height: 280%;
+     padding-left: 2%;
+ }
+ 
+ h3 {
+     line-height: 110%;
+     padding: 5% 0;
+ }
+ 
+ p {
+     padding: 1%;
+ }
+ 
+ img {
+     text-align: center;
+     max-width: 100%;
+     height: auto;
+     width: auto;
+ }
+ 
+ a {
+     max-width: 20%;
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+ }
+ 
+ a:hover {
+     color: #FFF;
+     text-decoration: underline;
+ }
+ 
+ header {
+     background-color: darkred;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 100%;
+     opacity: 80%;
+ }
+ 
+ #logo {
+     margin: 0px;
+     float: left;
+     width: 100px;
+     height: 100px;
+     background-image: url() no-repeat center;
+ }
+ 
+ nav {
+     float: right;
+     max-width: 80%
+ }
+ 
+ #menu {
+     display: hidden;
+     width: 40px;
+     height: 40px;
+     background-image: url(images/menu.png) center;
+ }
+ 
+ a:hover#menu {
+     border-radius: 4px 4px 0 0;
+ }
+ 
+ ul {
+     list-style: none;
+ }
+ 
+ nav ul li {
+     display: inline-block;
+     float: left;
+     padding: 10px;
+ }
+ 
+ .current {
+     color: #FFF;
+     text-decoration: underline;
+ }
+ 
+ section {
+     width: 29%;
+     float: left;
+     margin: 2% 2%;
+     text-align: center;
+ }
+ 
+ .clear {
+     clear: both;
+ }
+ 
+ #logo {
+     margin: 0px;
+     float: left;
+     width: 100px;
+     height: 100px;
+     background-image: url() no-repeat center;
+ }
+ 
+ header {
+     background-color: darkred;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 100%;
+     opacity: 80%;
+ }
+ 
+ #logo_img {
+     text-align: center;
+     max-width: 100%;
+     height: auto;
+     width: auto;
+ }
+ 
+ #main_cont {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     /* bring your own prefixes */
+     transform: translate(-50%, -50%);
+ }
+ 
+ #last {
+     background-color: darkred;
+     width: 100%;
+     height: 20px;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     z-index: 100%;
+     opacity: 80%;
+ }
+ 
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ #owner {
+     color: #f0f0f0;
+     margin-bottom: 0px;
+     padding: 0%;
+     position: inherit;
+     bottom: 0;
+ }
+ 
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+ }
+ 
+ #addplbt {
+     background-color: darkred;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+ 
+ #addplbt:hover {
+     background-color: #9b5f50;
+ }
+ 
+ .container {
+     border-radius: 5px;
+     background-color: #f2f2f2;
+     padding: 20px;
+ }
