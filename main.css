@@ -611,6 +611,11 @@ p {
     background-color: #084d0bc0;
 }
 
+.editbl {
+    border-left: solid;
+    border-left-color: lightgrey;
+}
+
 
 /* MEDIA ------------------------------------------------------ */
 
