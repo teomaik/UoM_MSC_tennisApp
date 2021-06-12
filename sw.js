@@ -12,6 +12,7 @@ self.addEventListener('install', function(event) {
                 '/addplayer.css',
 
                 '/index.js',
+                '/common.js',
                 '/src/addplayer.js',
                 '/src/base.js',
                 '/src/main.js',
