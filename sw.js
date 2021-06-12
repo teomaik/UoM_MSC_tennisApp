@@ -18,7 +18,7 @@ self.addEventListener('install', function(event) {
                 '/src/tbsort.js',
 
                 '/manifest.json',
-                '/favicon.png',
+                '/favico.png',
 
                 '/assets/logo.png',
                 '/assets/tennis-court-dimensions.jpg',
