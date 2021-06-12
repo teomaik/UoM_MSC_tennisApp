@@ -22,6 +22,9 @@ self.addEventListener('install', function(event) {
 
                 '/assets/logo.png',
                 '/assets/tennis-court-dimensions.jpg',
+                '/assets/96.png',
+                '/assets/192.png',
+                '/assets/512.png',
 
                 '/images/cup1.png',
                 '/images/ing2.png',

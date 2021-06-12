@@ -2,6 +2,11 @@
     "short_name": "UoM Tennis",
     "name": "UoM MSC Tennis App",
     "icons": [{
+            "src": "/assets/96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
             "src": "/assets/192.png",
             "type": "image/png",
             "sizes": "192x192"
