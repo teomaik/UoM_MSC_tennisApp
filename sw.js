@@ -1,7 +1,7 @@
 self.addEventListener('install', function(event) {
     console.log('The service worker is being installed.');
     event.waitUntil(
-        caches.open('MSC-TennisApp').then(function(cache) {
+        caches.open('UoM_MSC_tennisApp').then(function(cache) {
             return cache.addAll([
                 '/index.html',
                 '/main.html',
