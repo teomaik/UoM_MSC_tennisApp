@@ -1,25 +1,28 @@
 {
     "short_name": "UoM Tennis",
     "name": "UoM MSC Tennis App",
+    "description": "MSC assignment for a web development course",
+
+    "start_url": "/UoM_MSC_tennisApp/",
+    "scope": "/UoM_MSC_tennisApp/",
+
+    "background_color": "white",
+    "display": "standalone",
+
     "icons": [{
-            "src": "/UoM_MSC_tennisApp/assets/96.png",
+            "src": "assets/96.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "/UoM_MSC_tennisApp/assets/192.png",
+            "src": "assets/192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/UoM_MSC_tennisApp/assets/512.png",
+            "src": "assets/512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
-    ],
-    "start_url": "/UoM_MSC_tennisApp/index.html",
-    "scope": "/UoM_MSC_tennisApp/",
-    "background_color": "white",
-    "display": "standalone",
-    "description": "MSC assignment for a web development course"
+    ]
 }
