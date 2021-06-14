@@ -612,8 +612,10 @@ p {
 }
 
 .editbl {
-    border-left: solid;
+    border-left: outset;
     border-left-color: lightgrey;
+    border-bottom: outset;
+    border-bottom-color: lightgrey;
 }
 
 
