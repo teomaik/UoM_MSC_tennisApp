@@ -75,7 +75,7 @@ function addPlayerToDB(fname, lname, nation, birthD, height) {
             career: "Fact about career",
             firsttitle: "Fact about first title"
         },
-        info: "",
+        info: " ",
         injuries: {},
         ranking: {},
         statistics: {}
