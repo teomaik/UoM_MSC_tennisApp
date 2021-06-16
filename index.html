@@ -23,12 +23,10 @@
 
     <main id="main_cont">
         <div class="btn-group">
-            <button onclick="myFunction()" class="dropbtn">Players</button>
+            <button class="dropbtn" id="dropbtn">Players</button>
             <div id="myDropdown" class="dropdown-content">
             </div>
-            <form class="addbtn" id="addbtn" action="addplayer.html">
-                <input type="submit" value="Add Player" />
-            </form>
+            <button class="addbtn" id="addpl_btn">Add Player</button>
 
         </div>
 
@@ -38,25 +36,7 @@
         <p id="owner">Maikantis Theodoros mai21033</p>
     </footer>
 
-    <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 
     <!-- Firebaseeeeeeeeeeeeeeeeeeeee -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
