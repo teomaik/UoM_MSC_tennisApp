@@ -34,7 +34,6 @@ function getPlayers(db_data) {
     var players = db_data.val();
     var playerNames = Object.keys(players);
     for (var i = 0; i < playerNames.length; i++) {
-        console.log(playerNames[i]);
         showPlayerToDropdown(playerNames[i]);
     }
 }
@@ -43,7 +42,13 @@ function showPlayerToDropdown(name) {
     var tag = document.createElement("a");
     var text = document.createTextNode(name);
     tag.appendChild(text);
-    tag.href = "main.html?name=" + name;
+    //tag.href = "main.html?name=" + name;
+
+    tag.href = "main.html";
+    tag.onclick = function(event, playername) {
+        localStorage["playerName"] = event.target.text;
+    };
+
     var element = document.getElementById("myDropdown");
     element.appendChild(tag);
 }

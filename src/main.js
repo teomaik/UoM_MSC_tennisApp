@@ -11,11 +11,13 @@ window.onload = function() {
 
 function showSelectedPlayer() {
     var playerName = '';
-    if (window.location.href.includes('name=')) {
-        playerName = window.location.href.split('name=')[1].replace(/%20/g, ' ');
-    }
 
-    if (playerName == '') {
+    //if (window.location.href.includes('name=')) {
+    //    playerName = window.location.href.split('name=')[1].replace(/%20/g, ' ');
+    //}
+    playerName = localStorage["playerName"];
+
+    if (playerName == '' || playerName == null) {
         alert("No player selected, you can always add a new one throught the main page");
         return;
     }
