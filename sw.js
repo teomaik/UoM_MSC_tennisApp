@@ -30,6 +30,9 @@ self.addEventListener('install', function(event) {
                 './src/base.js',
                 './src/main.js',
                 './src/tbsort.js',
+                './src/firebase-analytics.js',
+                './src/firebase-database.js',
+                './src/firebase-app.js'
             ]);
         })
     );
